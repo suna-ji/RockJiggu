@@ -27,5 +27,5 @@ def self_introduce():
     }
     return JsonResponse(response, safe = False)
     #오류를 피하기 위해 safe = False를 해준다.
-
+ 
 def create():
