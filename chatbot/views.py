@@ -11,13 +11,12 @@ from django.views.decorators.csrf import csrf_exempt
 def webhook(request):
     if request.method == 'POST':
         req = json.loads(request.body)
-
         action = req.get('queryResult').get('action')
         params = req.get('queryResult').get('parameters')
 
         if action == 'self_introduce':
-            returns self_introduce()
-        elif action = 'create':
+            return self_introduce()
+        elif action == 'create':
             return create()    
 
 
@@ -29,3 +28,8 @@ def self_introduce():
     #오류를 피하기 위해 safe = False를 해준다.
  
 def create():
+    return render(request, 'index.html')
+
+
+def main(request):
+    return render(request, 'index.html')
