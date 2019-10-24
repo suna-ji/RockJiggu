@@ -1768,3 +1768,21 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: index.html
 [pid: 19556|app: 0|req: 60/60] 110.13.194.132 () {42 vars in 746 bytes} [Thu Oct 24 12:45:20 2019] GET / => generated 69856 bytes in 34 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 61/61] 110.13.194.132 () {42 vars in 746 bytes} [Thu Oct 24 12:59:57 2019] GET / => generated 69856 bytes in 34 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
