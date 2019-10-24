@@ -1786,3 +1786,169 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: index.html
 [pid: 19556|app: 0|req: 61/61] 110.13.194.132 () {42 vars in 746 bytes} [Thu Oct 24 12:59:57 2019] GET / => generated 69856 bytes in 34 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 62/62] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:03:57 2019] GET / => generated 69863 bytes in 38 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 63/63] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:03:58 2019] GET / => generated 69863 bytes in 36 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 64/64] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:03:59 2019] GET / => generated 69863 bytes in 35 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 65/65] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:04:00 2019] GET / => generated 69863 bytes in 31 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 66/66] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:04:00 2019] GET / => generated 69863 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./RockJiggu/views.py", line 4, in home
+    return render(request, 'index.html')
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[pid: 19556|app: 0|req: 67/67] 110.13.194.132 () {42 vars in 753 bytes} [Thu Oct 24 13:04:01 2019] GET / => generated 69863 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 24 13:16:28 2019] ***
+compiled with version: 7.4.0 on 23 October 2019 07:53:54
+os: Linux-4.15.0-1051-aws #53-Ubuntu SMP Wed Sep 18 13:35:53 UTC 2019
+nodename: ip-172-31-33-157
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/RockJiggu
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/RockJiggu/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/RockJiggu
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/RockJiggu/uwsgi.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Set PythonHome to /home/ubuntu/RockJiggu/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560368057690
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560368057690 pid: 32734 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32734)
+spawned uWSGI worker 1 (pid: 32736, cores: 1)
+[pid: 32736|app: 0|req: 1/1] 110.13.194.132 () {44 vars in 775 bytes} [Thu Oct 24 13:16:42 2019] GET / => generated 12918 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 111 bytes (2 switches on core 0)
+[pid: 32736|app: 0|req: 2/2] 211.231.103.94 () {38 vars in 563 bytes} [Thu Oct 24 13:29:53 2019] GET / => generated 12918 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 111 bytes (2 switches on core 0)
+[pid: 32736|app: 0|req: 3/3] 14.42.51.80 () {40 vars in 749 bytes} [Thu Oct 24 13:31:54 2019] GET / => generated 12918 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view chatbot.views.webhook didn't return an HttpResponse object. It returned None instead.
+[pid: 32736|app: 0|req: 4/4] 14.42.51.80 () {42 vars in 803 bytes} [Thu Oct 24 13:32:00 2019] GET /webhook/ => generated 48803 bytes in 49 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 32736|app: 0|req: 5/5] 14.42.51.80 () {40 vars in 703 bytes} [Thu Oct 24 13:32:00 2019] GET /favicon.ico => generated 2196 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index.html
+[pid: 32736|app: 0|req: 6/6] 14.42.51.80 () {42 vars in 807 bytes} [Thu Oct 24 13:36:10 2019] GET /index.html => generated 2193 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /home-carousel.html
+[pid: 32736|app: 0|req: 7/7] 14.42.51.80 () {42 vars in 823 bytes} [Thu Oct 24 13:36:13 2019] GET /home-carousel.html => generated 2217 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /compare.html
+[pid: 32736|app: 0|req: 8/8] 14.42.51.80 () {42 vars in 811 bytes} [Thu Oct 24 13:36:16 2019] GET /compare.html => generated 2199 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 32736|app: 0|req: 9/9] 110.13.194.132 () {44 vars in 789 bytes} [Thu Oct 24 14:01:22 2019] GET /webhook => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 114 bytes (1 switches on core 0)
+Internal Server Error: /webhook/
+Traceback (most recent call last):
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/RockJiggu/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view chatbot.views.webhook didn't return an HttpResponse object. It returned None instead.
+[pid: 32736|app: 0|req: 10/10] 110.13.194.132 () {44 vars in 791 bytes} [Thu Oct 24 14:01:22 2019] GET /webhook/ => generated 48895 bytes in 28 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
