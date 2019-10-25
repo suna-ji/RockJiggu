@@ -13,7 +13,6 @@ def webhook(request):
         req = json.loads(request.body)
         action = req.get('queryResult').get('action')
         params = req.get('queryResult').get('parameters')
-
         if action == 'self_introduce':
             return self_introduce()
         elif action == 'create':
@@ -31,5 +30,4 @@ def create():
     return render(request, 'index.html')
 
 
-def main(request):
-    return render(request, 'index.html')
+
