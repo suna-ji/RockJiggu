@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('webhook/', include(chatbot_url)),
+    path('', views.home, name = "home"),
 ]
