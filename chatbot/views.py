@@ -7,6 +7,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 
 
+
 @csrf_exempt
 def webhook(request):
     if request.method == 'POST':
@@ -29,5 +30,5 @@ def self_introduce():
 def create():
     return render(request, 'index.html')
 
-
-
+def chat(request):
+    return render(request, 'chatbot/chat.html')
