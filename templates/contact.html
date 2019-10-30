@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}    
+<!--================Contact Area =================-->
+<section class="contact_area p_100">
+    <div class="container">
+        <div class="contact_form_inner">
+            <h3>메시지</h3>
+            <form class="contact_us_form row" action="{% url 'sendemail' %}" method="post" id="contactForm" novalidate="novalidate">
+                <div class="form-group col-lg-4">
+                    <input type="text" class="form-control" id="name" name="username" placeholder="이름을 적어주세요">
+                </div>
+                <div class="form-group col-lg-4">
+                    <input type="email" class="form-control" id="email" name="useremail" placeholder="이메일 주소를 적어주세요">
+                </div>
+                <div class="form-group col-lg-12">
+                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="문의사항을 남겨주세요"></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                    <button type="submit" value="submit" class="btn update_btn form-control">문의 남기기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--================End Contact Area =================-->
+
+
+<!--================Contact Success and Error message Area =================-->
+<div id="success" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h2>Thank you</h2>
+                <p>Your message is successfully sent...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals error -->
+
+<div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h2>Sorry !</h2>
+                <p> Something went wrong </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================End Contact Success and Error message Area =================-->
+
+{% endblock %}
