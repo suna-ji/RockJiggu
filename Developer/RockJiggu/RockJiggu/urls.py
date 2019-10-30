@@ -20,6 +20,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('chatbot/', include(chatbot_url)),
     path('', views.home, name = "home"),
     path('contact/', views.contact, name = "contact"),
     path('sendemail/', views.sendemail, name = "sendemail"),
