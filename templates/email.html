@@ -1,0 +1,12 @@
+{% load inlinecss %}
+{% inlinecss "email.css" %}
+<div class="mail_container">
+    <div class="label">SUBJECT</div>
+    <div class="output">{{ subject }}</div>
+    <div class="label">E-MAIL/PHONE NUMBER</div>
+    <div class="output">{{ useremail }}</div>
+    <div class="label">MESSAGE</div>
+    <div class="output">{{ message }}</div>
+</div>
+{% endinlinecss %}
+<!-- 해당 css 파일을 html파일에 inline형식으로 추가해주는 방법 -->
