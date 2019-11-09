@@ -20,15 +20,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
     path('chatbot/', include(chatbot_url)),
     path('', views.home, name = "home"),
     path('contact/', views.contact, name = "contact"),
     path('sendemail/', views.sendemail, name = "sendemail"),
 ]   
-=======
-    path('', views.home, name = "home"),
-    path('contact/', views.contact, name = "contact"),
-    path('sendemail/', views.sendemail, name = "sendemail"),
-]
->>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
