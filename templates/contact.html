@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}    
+<<<<<<< HEAD
 
 
 {% if messages %}
@@ -17,12 +18,18 @@
         </div>
     </section>	
 {% endif %}
+=======
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
 <!--================Contact Area =================-->
 <section class="contact_area p_100">
     <div class="container">
         <div class="contact_form_inner">
             <h3>메시지</h3>
+<<<<<<< HEAD
             <form class="contact_us_form row" action="" method="POST" id="contactForm" novalidate="novalidate">
+=======
+            <form class="contact_us_form row" action="{% url 'sendemail' %}" method="post" id="contactForm" novalidate="novalidate">
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
                 <div class="form-group col-lg-4">
                     <input type="text" class="form-control" id="name" name="username" placeholder="이름을 적어주세요">
                 </div>
@@ -50,6 +57,11 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
+<<<<<<< HEAD
+=======
+                <h2>Thank you</h2>
+                <p>Your message is successfully sent...</p>
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
             </div>
         </div>
     </div>

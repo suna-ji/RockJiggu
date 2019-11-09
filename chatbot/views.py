@@ -15,6 +15,7 @@ def webhook(request):
         action = req.get('queryResult').get('action')
         params = req.get('queryResult').get('parameters')
         if action == 'self_introduce':
+<<<<<<< HEAD
           return self_introduce()
         elif action == 'create':
           return create()
@@ -30,6 +31,11 @@ def webhook(request):
         #   pass
         # elif action == 'return_product-yes-no-yes': #지수
         #   pass         
+=======
+            return self_introduce()
+        elif action == 'create':
+            return create()    
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
 
 
 def self_introduce():
@@ -43,6 +49,7 @@ def create():
     return render(request, 'index.html')
 
 def chat(request):
+<<<<<<< HEAD
     return render(request, 'chatbot/chat.html')
 
 #선아(물품수령 yes -> 배대지 yes->관세 yes)
@@ -94,3 +101,6 @@ def order_create(params):
     return JsonResponse(response, safe=False)
     
         
+=======
+    return render(request, 'chatbot/chat.html')
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67

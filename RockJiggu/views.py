@@ -8,6 +8,7 @@ from django.core.mail import EmailMessage
 from django.utils.encoding import force_bytes, force_text
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse, HttpResponseRedirect
+<<<<<<< HEAD
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode,urlsafe_base64_decode
@@ -17,12 +18,19 @@ from django.utils.encoding import force_bytes, force_text
 from django.contrib import messages
 import pdb
 
+=======
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
 
 def home(request):
     return render(request, 'index.html') 
 
+<<<<<<< HEAD
 # def contact(request):
 #     return render(request, 'contact.html')
+=======
+def contact(request):
+    return render(request, 'contact.html')
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
 
 @csrf_exempt
 def sendemail(request):
@@ -37,6 +45,7 @@ def sendemail(request):
             return HttpResponse('Invalid header found.')
         return redirect('home')
     else:
+<<<<<<< HEAD
         return HttpResponse("정확하게 입력해주세요.")    
 
 @csrf_exempt
@@ -64,4 +73,8 @@ def contact(request):
         return redirect('contact')
     else:
         return render(request, 'contact.html')    
+=======
+        return HttpResponse("정확하게 입력해주세요.")        
+
+>>>>>>> 031c242406ab1962811265c2f24f70df0564fd67
 
