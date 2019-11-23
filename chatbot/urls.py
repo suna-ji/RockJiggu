@@ -3,7 +3,7 @@ from . import views
 
 app_name = "chatbot"
 urlpatterns = [
-    # path('chat/', views.chat, name = "chat"),
+    path('chat/', views.chat, name = "chat"),
     path('', views.webhook, name="webhook"),
 ]
 
