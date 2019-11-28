@@ -37,6 +37,10 @@ def webhook(request):
     return return_product_yes_yes_yes(request)
   elif action == 'return_product.return_product-yes.return_product-yes-yes.return_product-yes-yes-no':  
     return return_product_yes_yes_no(request)
+  elif action == 'return_product.return_product-yes.return_product-yes-no.return_product-yes-no-yes':
+    return return_product_yes_no_yes(request)
+  elif action == 'return_product.return_product-yes.return_product-yes-no.return_product-yes-no-no':
+    return return_product_yes_no_no(request)
      
 
 
@@ -154,7 +158,7 @@ def return_product_yes_no_yes(request):
   returninfo.is_clearance = 'yes'
   returninfo.save()
   response = {
-      'fulfillmentText': '고객님께서 이용하신 이하넥스의 경우 사전에 위약반송에 필요한 서류(신분증사본, 제1금융권 통장사본, 반품사유서, 셀러와 문답내용, 구매증빙자료)를 준비 후 1:1 반품 게시판으로 문의해주세요.'
+      'fulfillmentText': 'yes-no-yes'
     }
   return JsonResponse(response, safe = False)
 
@@ -164,7 +168,7 @@ def return_product_yes_no_no(request):
   returninfo.is_clearance = 'no'
   returninfo.save()
   response = {
-      'fulfillmentText': '고객님께서 이용하신 이하넥스의 경우 사전에 위약반송에 필요한 서류(신분증사본, 제1금융권 통장사본, 반품사유서, 셀러와 문답내용, 구매증빙자료)를 준비 후 1:1 반품 게시판으로 문의해주세요.'
+      'fulfillmentText': 'yes-no-no'
     }
   return JsonResponse(response, safe = False)
 
